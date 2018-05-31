@@ -1,0 +1,96 @@
+header{
+    height: 6vh;
+    width: 100%;
+    background: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    background-image: url('./src/img/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+.Start{
+    color: #fed136;
+    margin: 0 12vw;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5em;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.nav-link{
+    margin: 0 1vw;
+}
+.menu{
+    display: none;
+    margin: 0 10vw;
+    border-radius: 4px;
+    border-style: none;
+    height: 4vh;
+    width: 75px;
+    background: #fed136;
+    color: white;
+    font-size: .75em;
+}
+.text-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 40vh auto;
+}
+.text{
+    font-size: 40px;
+    font-style: italic;
+}
+.text2{
+    font-size: 75px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 2vh;
+}
+.TellMe{
+    background: #fed136;
+    color: white;
+    border-style: none;
+    border-radius: 4px;
+    height: 65px;
+    width: 165px;
+    font-weight: bolder;
+    font-size: 1em;
+    margin: 5vh auto;
+}
+@media (max-width: 990px){
+    .menu{
+        display: flex;
+    }
+    nav{
+        display: none;
+    }
+    header{
+        background: #212529;
+    }
+}
+@media (max-width: 765px){
+    body{
+        background-size: 880px;
+    }
+    .text-container{
+        margin: 15vh auto;
+    }
+    .text{
+        font-size: 22px;
+    }
+    .text2{
+        font-size: 50px;
+    }
+    .Start{
+        margin: 0 3vw;
+    }
+}
